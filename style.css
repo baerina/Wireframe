@@ -1,1 +1,115 @@
-//** Fonts and Shits **//
+/*
+  Colors (5):
+  1. White       #ffffff - card background, photo background
+  2. Dark Slate  #2c3e50 - main text and name
+  3. Blue        #3d6c91 - photo border, dashed box borders, subtitle, bullets
+  4. Green       #3d9140 - dashed border around the card
+  5. Light Blue  #e3f0fa - background of the three boxes
+
+  Fonts (5):
+  1. Arial, sans-serif                                         - page text (body)
+  2. Georgia, serif                                            - name (h2)
+  3. Cambria, Cochin, Georgia, Times, 'Times New Roman', serif - subtitle
+  4. 'Courier New', Courier, monospace                         - description (p)
+  5. monospace                                                 - details list (ul)
+*/
+
+/* ---------- PAGE ---------- */
+body {
+    background-image: url("https://images.plurk.com/1J3Z3GqcMANh2mQroWlwKM.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: #2c3e50;
+    margin: 0;
+    padding: 40px 40px;
+}
+
+/* ---------- 1. CARD ---------- */
+/* max-width keeps the card at 520px or less; margin: auto centers it */
+.card {
+    max-width: 520px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden; 
+    padding-bottom: 8px;
+
+    border: 2px dashed #3d9140;
+    box-sizing: border-box;
+}
+
+/* ---------- 2. COVER ---------- */
+.cover {
+    height: 200px;
+    background-image: url("https://images.plurk.com/24fj2Wb7MucRqdLW5kx3Pm.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* ---------- 3. PHOTO ---------- */
+.card img {
+    display: block;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #3d6c91;
+    background-color: #ffffff;
+    margin: -70px auto 20px auto;
+}
+
+/* ---------- 4. NAME AND SUBTITLE (one dashed box) ---------- */
+.card h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 32px;
+    padding: 20px 20px 4px 20px;
+    background-color: #e3f0fa;
+    border: 1px dashed #3d6c91;
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+}
+
+.card p.subtitle {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #3d6c91;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 32px 20px 32px;
+    padding: 0 20px 20px 20px;
+    background-color: #e3f0fa;
+    border: 1px dashed #3d6c91;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+}
+
+/* ---------- 5. DESCRIPTION (dashed box) ---------- */
+.card p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 32px 20px 32px;
+    padding: 20px;
+    background-color: #e3f0fa;
+    border: 1px dashed #3d6c91;
+    border-radius: 8px;
+}
+
+/* ---------- 6. DETAILS LIST (dashed box) ---------- */
+.card ul {
+    font-family: monospace;
+    font-size: 16px;
+    margin: 0 32px 20px 32px;
+    padding: 20px 20px 20px 44px; 
+    line-height: 1.5;
+    background-color: #e3f0fa;
+    border: 1px dashed #3d6c91;
+    border-radius: 8px;
+}
+
+.card li::marker {
+    color: #3d6c91;
+}
