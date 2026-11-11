@@ -14,7 +14,10 @@
   5. monospace                                                 - details list (ul)
 */
 
-/* ---------- PAGE ---------- */
+
+
+
+/* ---------- The page or body ---------- */
 body {
     background-image: url("https://images.plurk.com/1J3Z3GqcMANh2mQroWlwKM.png");
     background-repeat: no-repeat;
@@ -26,21 +29,23 @@ body {
     padding: 40px 40px;
 }
 
-/* ---------- 1. CARD ---------- */
-/* max-width keeps the card at 520px or less; margin: auto centers it */
+/* ---------- The card ---------- */
 .card {
-    max-width: 520px;
+    max-width: 380px;
     margin: 0 auto;
     background-color: #ffffff;
     border-radius: 12px;
     overflow: hidden; 
     padding-bottom: 8px;
-
     border: 2px dashed #3d9140;
     box-sizing: border-box;
 }
 
-/* ---------- 2. COVER ---------- */
+.card:hover {
+    box-shadow: rgba(2, 48, 32, 0.25) 5px 5px 15px 15px;
+}
+
+/* ---------- Cover Photo ---------- */
 .cover {
     height: 200px;
     background-image: url("https://images.plurk.com/24fj2Wb7MucRqdLW5kx3Pm.png");
@@ -48,7 +53,7 @@ body {
     background-position: center;
 }
 
-/* ---------- 3. PHOTO ---------- */
+/* ---------- My Picture ---------- */
 .card img {
     display: block;
     width: 140px;
@@ -60,7 +65,7 @@ body {
     margin: -70px auto 20px auto;
 }
 
-/* ---------- 4. NAME AND SUBTITLE (one dashed box) ---------- */
+/* ---------- Name and subtitle ---------- */
 .card h2 {
     font-family: Georgia, serif;
     font-size: 30px;
@@ -68,7 +73,7 @@ body {
     margin: 0 32px;
     padding: 20px 20px 4px 20px;
     background-color: #e3f0fa;
-    border: 1px dashed #3d6c91;
+    border: 2px dotted #3d6c91;
     border-bottom: none;
     border-radius: 8px 8px 0 0;
 }
@@ -77,19 +82,19 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #3d6c91;
     font-size: 16px;
-    text-align: center;
+    text-align: justify;
     margin: 0 32px 20px 32px;
     padding: 0 20px 20px 20px;
     background-color: #e3f0fa;
-    border: 1px dashed #3d6c91;
+    border: 2px dotted #3d6c91;
     border-top: none;
     border-radius: 0 0 8px 8px;
 }
 
-/* ---------- 5. DESCRIPTION (dashed box) ---------- */
 .card p {
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
+    text-align: justify;
     line-height: 1.5;
     margin: 0 32px 20px 32px;
     padding: 20px;
@@ -98,7 +103,7 @@ body {
     border-radius: 8px;
 }
 
-/* ---------- 6. DETAILS LIST (dashed box) ---------- */
+/* ---------- 3rd section (LIST)---------- */
 .card ul {
     font-family: monospace;
     font-size: 16px;
